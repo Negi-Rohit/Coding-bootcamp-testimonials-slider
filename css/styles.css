@@ -1,0 +1,108 @@
+/******** html attributes *******/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+
+
+}
+
+p {
+  display: inline-block;
+  width: 60%;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #27056f;
+}
+
+footer {
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+h5 {
+
+  font-weight: 900;
+  color: #dddddd;
+}
+span{
+  color: #27056f;
+}
+
+/************css classes *****/
+#tanya {
+  display: none;
+}
+
+.container {
+  padding:5rem 3rem 5rem 0;
+  display: flex;
+  background: url("../images/pattern-bg.svg") right bottom no-repeat, url("../images/pattern-curve.svg") left bottom no-repeat;
+  background-size:contain, 500px;
+}
+
+.paragraph {
+  margin-left: 4rem;
+  background: url("../images/pattern-quotes.svg") no-repeat;
+  margin-top: 4rem;
+}
+
+.face {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider-button{
+text-align: center;
+}
+
+.button-slide {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  margin-top: -20px;
+}
+
+.button-prev {
+  border-radius: 100% 0 0 100%;
+  margin-right: -4px;
+}
+
+.button-next {
+  border-radius: 0 100% 100% 0;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+button:active{
+  outline: none;
+}
+@media screen and (max-width: 500px) {
+.container{
+  flex-direction: column-reverse;
+  background-position: top,bottom;
+  align-items:center;
+  margin:0;
+  padding:2rem 0 0 0;
+}
+.face{
+  border-radius: 5px;
+  width:300px;
+  height: 300px;
+}
+p{
+  width:98%;
+  font-size: 20px;
+}
+span{
+  display: block;
+  font-size: 1rem;
+}
+.paragraph{
+  background-position: top center;
+  text-align: center;
+  width: 80%;
+  margin: 6rem  0 0;
+}
+
+}
